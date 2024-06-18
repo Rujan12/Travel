@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel and Tourism</title>
+    <link rel="shortcut icon" href="templates/logo.png" type="image/x-icon">
+    <style>
+        *{
+            transition: 0.5s;
+        }
+        body{
+            background-image:url("templates/wallpaperflare.com_wallpaper.jpg");
+            
+            background-size:100% 100%;
+            
+            
+            background-repeat: no-repeat;
+            background-attachment:fixed;
+            
+        }
+        
+        
+        .container{
+            width: 100%;
+            height: 100%;
+        }
+        
+            
+        
+
+        h1{
+            text-align: center;
+            
+            /* font-family:; */
+            font-size: 115px;
+            color: rgb(98, 99, 130);
+            text-shadow: 10px 20px 40px whitesmoke;
+            
+        }
+        h2{
+            text-align: center;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-shadow: 10px 20px 40px rgb(244, 248, 249);
+            color: rgb(40, 62, 75);
+            
+            
+        }
+        .menu{
+            display: flex;
+            background-color:hsla(30%, 35%, 10%, alpha);
+            list-style: none;
+            padding-bottom: 1.5%;
+            padding-right: 2%;
+            padding-top: 2%;
+            font-size: larger;
+            font-family:cursive;
+            background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(218, 236, 241)) ;
+            align-items: top;            
+
+            position: relative;
+            justify-content:right;
+            
+            
+            
+        }
+        .logo{
+            display: flex ;
+            height: 70px;
+            position: absolute;
+            right: 93%;
+            top: 10%;
+            
+            
+        }
+        li{
+            /* margin-top: ; */
+            margin-right: 3%;
+            list-style: none;
+        }
+        li:hover,.search{
+            text-shadow: 0px 0px 0px rgb(23, 28, 30);
+            padding-bottom: 5px;
+            text-shadow:5px 5px 5px whitesmoke
+            
+        }
+        /* .search{
+            margin-left: 50px;
+            margin-right: 20px;
+        } */
+        .button{
+            /* background-color:; */
+           
+            /* border-radius: 10%; */
+            display: flex;
+            text-align: center;
+            justify-content:right;
+            margin-right: 20px;
+            margin-top: 10px;
+
+            
+        }
+        .btn{
+            padding: 0 10px;
+            border: 1px solid;
+            border-radius: 10%;
+            margin: 0 10px;
+            
+        }
+        /* .icon{
+            width: 4px;
+            height: 4px;
+            position: relative;
+            position: sticky;
+            left: 95%;
+            
+            bottom: 0%;
+
+
+            
+        } */
+        .search{
+            margin-left: 5%;
+        }
+        h3{
+            text-align: center;
+            color: rgb(33, 49, 65);
+            font-size: 32px;
+            font-family: cursive;
+            text-shadow: 0px 0px 30px whitesmoke;
+            
+        }
+        .flex-container {
+
+            display: flex;
+            flex-wrap: wrap;
+            background-color:rgba(125, 185, 197, 0.5);
+
+            padding-top: 10px;
+            padding-bottom: 10px;
+            
+            /* transform: translateY(100%); */
+            justify-content: space-between;
+            /* align-items: center; */
+            
+            
+
+            /* width: 80%;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+            
+
+        }
+
+        .flex-container img{
+            
+            width: 300px;
+            height: 200px;
+            border-radius: 3%;
+            /* opacity: 90%; */
+            
+            /* border-spacing: 10%; */
+            /* box-shadow: 30px 30px 30px  ; */
+           
+        }
+        .text{
+            text-align: center;
+            font-family: cursive;
+            padding: 1px;
+            background-color:rgba(255, 255, 255, 0.4);
+            border-radius: 3%;
+
+            /* transform: translateY(100%); */
+           
+        }
+        li img:hover  {
+            text-shadow: 0px 0px 0px black;
+            padding-bottom: 5px;
+            text-shadow:5px 5px 5px whitesmoke
+            
+            
+            
+
+        }
+        p{
+            font-size: 18px;
+            text-shadow:5px 5px 5px rgb(198, 193, 193)
+            
+        }
+        .paragraph {
+            display: flex;
+            justify-content:space-evenly;
+            
+            
+            
+
+            
+            /* border: 10px solid black; */
+
+        }
+        .paragraph li{
+            margin: 2%;
+            background-color:rgba(223, 218, 153, 0.4);
+            padding: 2%;
+            padding-top: 0%;
+        }
+        /* .body2{
+            background-image: url(templates/ecc7bb54eed27918cb66c829bfca16e0.jpeg);
+            margin-top: 10px;
+            
+        } */
+       
+        header{
+            font-weight: bolder;
+            text-align: center;
+            margin-top: 80px;
+        }
+        h6{ 
+            margin-top: 0%;
+            padding-top: 5%;
+            font-family: cursive;
+            font-size: 24px;
+            text-align: center;
+            text-decoration-line: underline;
+
+        } 
+        .foot{
+            background-color: rgba(255, 255, 255, 0.4);
+            /* width: 100%; */
+            height: 500px;
+
+
+
+        }
+        h5{
+            font-size: 24px;
+            text-decoration: underline;
+            
+            
+        }
+        .container2{
+            text-align: center;
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.6);
+            justify-content: space-around;
+            color: rgb(181, 182, 171);
+            text-shadow:5px 5px 5px black;
+            padding: 5% 0% 5% 0%;
+            
+        }
+
+        iframe{
+            height: 300px;
+            width: 300px;
+            padding: 20px;
+        }
+        .small{
+            display: flex;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.6)
+            
+        }
+        .small li{
+            padding-left: 20px;
+            
+        }
+        h4{
+            color: aliceblue;
+        }
+        .body2{
+            height:700px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+        <div class="menu">
+            <div class="logo"><img src="templates/logo.png" alt=""></div>
+            <li>Home</li>
+            <li>Gallary</li>
+            <li>Abouts</li>
+            <li>Contacts</li>
+            <li>Blogs</li>
+            <div class="search" ><input type="search" placeholder="search" name="" id="search"></div>
+            </div>
+        <div class="button">
+            <form action="https://accounts.google.com/signup/v2/createaccount?continue=https%3A%2F%2Faccounts.google.com%2FManageAccount%3Fnc%3D1&parent_directed=true&ddm=0&flowName=GlifWebSignIn&flowEntry=SignUp">
+            <button>Sign in</button>
+            </form>
+            <form action="https://accounts.google.com/signup/v2/createaccount?continue=https%3A%2F%2Faccounts.google.com%2FManageAccount%3Fnc%3D1&parent_directed=true&ddm=0&flowName=GlifWebSignIn&flowEntry=SignUp">
+            <button>Log in</button>
+            </form>
+        </div>
+        
+    </div>
+    
+    <h1>The Himalayas
+        <h2 >"Ignite your wanderlust. Explore the world"</h2>
+    </h1>
+</div>
+<h3>Popular Destination</h3>
+<div >
+    <ul class="flex-container" >
+        <li class="d1">
+            <form action="https://en.wikipedia.org/wiki/Annapurna">
+                <button><img src="templates/nepal-in-pictures-beautiful-places-to-photograph-annapurna-range.jpg" alt=""></button>
+            <div class="text"><p>Annapurna</p></div><div></form>
+        <li class="d2">
+            <form action="https://en.wikipedia.org/wiki/Mount_Everest">
+                <button><img src="templates/nepal-in-pictures-beautiful-places-to-photograph-everest-climbers.jpg" alt=""></button><div class="text"><p>Mount Everest</p></div></li></form>
+        <li class="d3">
+            <form action="https://en.wikipedia.org/wiki/Boudhanath">
+                <button><img src="templates/nepal-in-pictures-beautiful-places-to-photograph-boudhanath-stupa-kathmandu.jpg" alt=""></button><div class="text"><p>Boudhanath Stupa, Kathmandu</p></div></li></form>
+        <li class="d4">
+            <form action="https://en.wikipedia.org/wiki/Pokhara">
+                <button><img src="templates/nepal-in-pictures-beautiful-places-to-photograph-pokhara.jpg" alt=""></button><div class="text"><p>Mountain View from Pokhara</p></div></li></form>
+            </ul>
+    </div>
+
+<div class="body2">
+    <h6>Why Book With Us ?</h6>
+        <ul class="paragraph">
+            <li><header>PERSONAL</header>
+                <p>
+                We operate on a first name basis here. You will have your own custom-made itinerary and a dedicated travel consultant who will serve as your point of contact before, during and after your trip.</p></li>
+            <li><header>TRUST</header>
+                <p>
+                Travel in confidence! Nordic Visitor is fully licensed by the Icelandic Tourist Board and is a member of various professional associations. We’re also highly rated on Tripadvisor by our travellers.</p></li>
+            <li><header>QUALITY</header>
+                <p>
+                Nordic Visitor is certified by Vakinn, the official quality label for Icelandic tourism, and our commitment to professional staff development has been recognised with an education award in Iceland.</p></li>
+            <li><header>DEDICATION</header>
+                <p>
+                We know your time is valuable, so our team is committed to providing you with the best travel experience possible, from before you book your holiday to after your journey has ended.</p></li>
+
+                
+        </ul>
+</div>
+
+
+<div class="content">
+    <ul class="container2">
+        <div>
+        <li>
+            <h5>Our link</h5>
+            <li>Our Hotel</li>
+            <li>Accommodations</li>
+            <li>Reservations</li>
+            <li>Meetings & Events</li>
+            <li>Local Area</li>
+            <li>Gallery</li>
+        </li></div>
+        <div>
+        <li>
+        <h5>Attraction</h5>
+            <li>Standard Rooms</li>
+            <li>Executive Rooms</li>
+            <li>Interior Penthouse</li>
+            <li>Corner Penthouse</li>
+        </li></div>
+        <div>
+        <li>
+            <h5>Contact Us</h5>
+            <li>Jadibuti,Kathmandu</li>
+            <li>Nepal</li>
+            <li>+977 9861723250</li>
+            <li>devildrager2050@gmail.com</li>
+        </li></div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2940.5021200804867!2d85.35268778422474!3d27.673608664036617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb195da33c6aed%3A0xbd0ef015052d90a5!2sJadibuti!5e0!3m2!1sen!2snp!4v1718688330199!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </ul>
+</div>
+<div > 
+    <ul class="small">
+        <h4>Follow us</h4>
+        <li>
+            <form action="https://hi-in.facebook.com/Reu.Zon.0101/">
+                <button><img src="templates/Facebook_Logo_Primary.png" height="20px" width="20px" style="margin: 0%; padding: 0%;"></button>
+            </form>
+        </li>
+        <li>
+            <form action="https://www.instagram.com/reu_zon/">
+                <button><img src="templates/Instagram_icon.png" alt="" height="20px" width="20px"></button>
+
+            </form>
+            
+        </li>
+        <li>
+            <form action="https://www.linkedin.com/in/rujan-dangol-30950a212?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ">
+                <button><img src="templates/icons8-linkedin-48.png" alt="" height="20px" width="20px"></button>
+
+            </form>
+            
+        </li>
+        <li>
+            <form action="https://www.whatsapp.com/download">
+                <button><img src="templates/whatsapp.png" alt="" height="20px" width="20px"></button>
+
+            </form>
+
+        </li>
+    </ul>
+</div>
+<!-- <div class="icon"><img src="templates/headset.svg" alt="" ></div> -->
+
+
+</body>
+</html>
