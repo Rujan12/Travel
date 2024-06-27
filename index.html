@@ -8,6 +8,10 @@
     <style>
         *{
             transition: 0.5s;
+            scroll-behavior: smooth;
+            margin: 0%;
+            scrollbar-width: none;
+            
             /* he */
         }
         body{
@@ -23,8 +27,10 @@
         
         
         .container{
-            width: 100%;
-            height: 100%;
+            /* width: 100%;
+            height: 100%; */
+            position:sticky;
+            top: 0;
         }
         
             
@@ -276,7 +282,8 @@
     </style>
 </head>
 <body>
-    <div class="container"></div>
+    <div class="container">
+        
         <div class="menu">
             <div class="logo"><img src="templates/logo.png" alt=""></div>
             <li>Home</li>
@@ -285,7 +292,8 @@
             <li>Contacts</li>
             <li>Blogs</li>
             <div class="search" ><input type="search" placeholder="search" name="" id="search"></div>
-            </div>
+        </div>
+
         <div class="button">
             <form action="https://accounts.google.com/signup/v2/createaccount?continue=https%3A%2F%2Faccounts.google.com%2FManageAccount%3Fnc%3D1&parent_directed=true&ddm=0&flowName=GlifWebSignIn&flowEntry=SignUp">
             <button>Sign in</button>
@@ -300,9 +308,9 @@
     <h1>The Himalayas
         <h2 >"Ignite your wanderlust. Explore the world"</h2>
     </h1>
-</div>
-<h3>Popular Destination</h3>
-<div >
+
+    <h3>Popular Destination</h3>
+<div>
     <ul class="flex-container" >
         <li class="d1">
             <form action="https://en.wikipedia.org/wiki/Annapurna">
